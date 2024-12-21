@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+  font-display: swap;
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 15px;
+  src: url("Roboto-Regular.woff") format("woff");
+  color: white;
+}
+
+body {
+  background-color: #232529;
+}
+
+.code {
+  background-color: #282a36;
+  padding: 10px;
+  margin: 10px;
+  color: #f279bd;
+}
+
+.code::before {
+  content: "code:";
+  display: block;
+}
