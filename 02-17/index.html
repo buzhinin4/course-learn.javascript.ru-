@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles.css" />
+
+    <title>2-17</title>
+  </head>
+  <body>
+    <section class="exercise">
+      <h3>1. Перепишите с использованием функции-стрелки</h3>
+      <p>Замените код Function Expression стрелочной функцией:</p>
+      <pre class="code">
+        function ask(question, yes, no) {
+          if (confirm(question)) yes()
+          else no();
+        }
+        
+        ask(
+          "Вы согласны?",
+          function() { alert("Вы согласились."); },
+          function() { alert("Вы отменили выполнение."); }
+        );
+        </pre
+      >
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
