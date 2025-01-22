@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles.css" />
+
+    <title>04-01</title>
+  </head>
+  <body>
+    <section class="exercise">
+      <h3>1. Привет, object</h3>
+      <p>Напишите код, выполнив задание из каждого пункта отдельной строкой:</p>
+      <ol>
+        <li>Создайте пустой объект user.</li>
+        <li>Добавьте свойство name со значением John.</li>
+        <li>Добавьте свойство surname со значением Smith.</li>
+        <li>Измените значение свойства name на Pete.</li>
+        <li>Удалите свойство name из объекта.</li>
+      </ol>
+    </section>
+    <section class="exercise">
+      <h3>3. Проверка на пустоту</h3>
+      <p>
+        Напишите функцию isEmpty(obj), которая возвращает true, если у объекта
+        нет свойств, иначе false.
+      </p>
+      <p>Должно работать так:</p>
+      <pre class="code">
+        let schedule = {};
+
+        alert( isEmpty(schedule) ); // true
+        
+        schedule["8:30"] = "get up";
+        
+        alert( isEmpty(schedule) ); // false
+        </pre
+      >
+    </section>
+    <section class="exercise">
+      <h3>4. Сумма свойств объекта</h3>
+      <p>У нас есть объект, в котором хранятся зарплаты нашей команды:</p>
+      <pre class="code">
+        let salaries = {
+          John: 100,
+          Ann: 160,
+          Pete: 130
+        }
+        </pre
+      >
+      <p>
+        Напишите код для суммирования всех зарплат и сохраните результат в
+        переменной sum. Должно получиться 390.
+      </p>
+      <p>Если объект salaries пуст, то результат должен быть 0.</p>
+    </section>
+    <section class="exercise">
+      <h3>5.Умножаем все числовые свойства на 2</h3>
+      <p>
+        Создайте функцию multiplyNumeric(obj), которая умножает все числовые
+        свойства объекта obj на 2.
+      </p>
+      <p>Например:</p>
+      <pre class="code">
+        // до вызова функции
+        let menu = {
+          width: 200,
+          height: 300,
+          title: "My menu"
+        };
+        
+        multiplyNumeric(menu);
+        
+        // после вызова функции
+        menu = {
+          width: 400,
+          height: 600,
+          title: "My menu"
+        };
+        </pre
+      >
+      <p>
+        Обратите внимание, что multiplyNumeric не нужно ничего возвращать.
+        Следует напрямую изменять объект.
+      </p>
+      <p>
+        P.S. Используйте typeof для проверки, что значение свойства числовое.
+      </p>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
