@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles.css" />
+
+    <title>04-04</title>
+  </head>
+  <body>
+    <section class="exercise">
+      <h3>2. Создайте калькулятор</h3>
+      <p>Создайте объект calculator (калькулятор) с тремя методами:</p>
+      <ol>
+        <li>
+          read() (читать) запрашивает два значения и сохраняет их как свойства
+          объекта с именами a и b.
+        </li>
+        <li>sum() (суммировать) возвращает сумму сохранённых значений.</li>
+        <li>
+          mul() (умножить) перемножает сохранённые значения и возвращает
+          результат.
+        </li>
+      </ol>
+      <pre class="code">
+        let calculator = {
+          // ... ваш код ...
+        };
+        
+        calculator.read();
+        alert( calculator.sum() );
+        alert( calculator.mul() );
+      </pre>
+    </section>
+    <section class="exercise">
+      <h3>3. Цепь вызовов</h3>
+      <p>
+        У нас есть объект ladder (лестница), который позволяет подниматься и
+        спускаться:
+      </p>
+      <pre class="code">
+        let calculator = {
+          // ... ваш код ...
+        };
+        
+        calculator.read();
+        alert( calculator.sum() );
+        alert( calculator.mul() );
+      </pre>
+      <p>
+        Теперь, если нам нужно выполнить несколько последовательных вызовов, мы
+        можем сделать это так:
+      </p>
+      <pre class="code">
+        ladder.up();
+        ladder.up();
+        ladder.down();
+        ladder.showStep(); // 1
+        ladder.down();
+        ladder.showStep(); // 0
+      </pre>
+      <p>
+        Измените код методов up, down и showStep таким образом, чтобы их вызов
+        можно было сделать по цепочке, например так:
+      </p>
+      <pre class="code">
+        ladder.up().up().down().showStep().down().showStep(); // показывает 1 затем 0
+      </pre>
+      <p>Такой подход широко используется в библиотеках JavaScript.</p>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
