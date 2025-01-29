@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles.css" />
+
+    <title>04-05</title>
+  </head>
+  <body>
+    <section class="exercise">
+      <h3>2. Создайте калькулятор</h3>
+      <p>
+        Создайте функцию-конструктор Calculator, которая создаёт объекты с тремя
+        методами:
+      </p>
+      <ol>
+        <li>
+          read() запрашивает два значения при помощи prompt и сохраняет их
+          значение в свойствах объекта.
+        </li>
+        <li>sum() возвращает сумму этих свойств.</li>
+        <li>mul() возвращает произведение этих свойств.</li>
+      </ol>
+      <p>Например:</p>
+      <pre class="code">
+        let calculator = new Calculator();
+        calculator.read();
+
+        alert( "Sum=" + calculator.sum() );
+        alert( "Mul=" + calculator.mul() );
+      </pre>
+    </section>
+    <section class="exercise">
+      <h3>3. Создайте new Accumulator</h3>
+      <p>Создайте функцию-конструктор Accumulator(startingValue).</p>
+      <p>Объект, который она создаёт, должен уметь следующее:</p>
+      <pre class="code">
+        let accumulator = new Accumulator(1); // начальное значение 1
+
+        accumulator.read(); // прибавляет введённое пользователем значение к текущему значению
+        accumulator.read(); // прибавляет введённое пользователем значение к текущему значению
+
+        alert(accumulator.value); // выведет сумму этих значений</pre
+      >
+      <p>
+        Другими словами, свойство value представляет собой сумму всех введённых
+        пользователем значений, с учётом начального значения startingValue.
+      </p>
+      <p>Ниже вы можете посмотреть работу кода:</p>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
