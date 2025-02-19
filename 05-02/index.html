@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles.css" />
+
+    <title>05-02</title>
+  </head>
+  <body>
+    <section class="exercise">
+      <h3>2. Ввод числового значения</h3>
+      <p>
+        Создайте функцию <code>readNumber</code>, которая будет запрашивать ввод
+        числового значения до тех пор, пока посетитель его не введёт.
+      </p>
+      <p>Функция должна возвращать числовое значение.</p>
+      <p>
+        Также надо разрешить пользователю остановить процесс ввода, отправив
+        пустую строку или нажав «Отмена». В этом случае функция должна вернуть
+        <code>null</code>.
+      </p>
+    </section>
+    <section class="exercise">
+      <h3>4. Случайное число от min до max</h3>
+      <p>
+        Встроенный метод <code>Math.random()</code> возвращает случайное число
+        от 0 (включительно) до 1 (но не включая 1).
+      </p>
+      <p>
+        Напишите функцию <code>random(min, max)</code>, которая генерирует
+        случайное число с плавающей точкой от <code>min</code> до
+        <code>max</code> (но не включая <code>max</code>).
+      </p>
+      <p>Пример работы функции</p>
+      <pre class="code">
+        alert( random(1, 5) ); // 1.2345623452
+        alert( random(1, 5) ); // 3.7894332423
+        alert( random(1, 5) ); // 4.3435234525</pre
+      >
+    </section>
+    <section class="exercise">
+      <h3>5. Случайное целое число от min до max</h3>
+      <p>
+        Напишите функцию <code>randomInteger(min, max)</code>, которая
+        генерирует случайное целое (integer) число от <code>min</code> до
+        <code>max</code> (включительно).
+      </p>
+      <p>
+        Любое число из интервала <code>min..max</code> должно появляться с
+        одинаковой вероятностью.
+      </p>
+      <p>Пример работы функции</p>
+      <pre class="code">
+        alert( randomInteger(1, 5) ); // 1
+        alert( randomInteger(1, 5) ); // 3
+        alert( randomInteger(1, 5) ); // 5</pre
+      >
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
