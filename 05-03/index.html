@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles.css" />
+
+    <title>05-03</title>
+  </head>
+  <body>
+    <section class="exercise">
+      <h3>
+        1. Напишите функцию ucFirst(str), возвращающую строку str с заглавным
+        первым символом. Например:
+      </h3>
+      <p>
+        Напишите функцию <code>ucFirst(str)</code>, возвращающую строку
+        <code>str</code> с заглавным первым символом.
+      </p>
+      <p>Например:</p>
+      <pre class="code">        ucFirst("вася") == "Вася";</pre>
+    </section>
+    <section class="exercise">
+      <h3>2. Проверка на спам</h3>
+      <p>
+        Напишите функцию <code>checkSpam(str)</code>, возвращающую
+        <code>true</code>, если <code>str</code> содержит 'viagra' или 'XXX', а
+        иначе <code>false</code>.
+      </p>
+      <p>Функция должна быть нечувствительна к регистру:</p>
+      <pre class="code">
+        checkSpam('buy ViAgRA now') == true
+        checkSpam('free xxxxx') == true
+        checkSpam("innocent rabbit") == false</pre
+      >
+    </section>
+    <section class="exercise">
+      <h3>3. Усечение строки</h3>
+      <p>
+        Создайте функцию <code>truncate(str, maxlength)</code>, которая
+        проверяет длину строки <code>str</code> и, если она превосходит
+        <code>maxlength</code>, заменяет конец <code>str</code> на "…", так,
+        чтобы её длина стала равна <code>maxlength</code>.
+      </p>
+      <p>
+        Результатом функции должна быть та же строка, если усечение не
+        требуется, либо, если необходимо, усечённая строка.
+      </p>
+      <p>Например:</p>
+      <pre class="code">
+        truncate("Вот, что мне хотелось бы сказать на эту тему:", 20) = "Вот, что мне хотело…"
+  
+        truncate("Всем привет!", 20) = "Всем привет!"</pre
+      >
+    </section>
+    <section class="exercise">
+      <h3>4. Выделить число</h3>
+      <p>
+        Есть стоимость в виде строки "$120". То есть сначала идёт знак валюты, а
+        затем – число.
+      </p>
+      <p>
+        Создайте функцию <code>extractCurrencyValue(str)</code>, которая будет
+        из такой строки выделять числовое значение и возвращать его.
+      </p>
+      <p>Например:</p>
+      <pre class="code">
+        alert( extractCurrencyValue('$120') === 120 ); // true</pre
+      >
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
