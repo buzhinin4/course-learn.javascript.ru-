@@ -15,6 +15,10 @@ body {
   background-color: #232529;
 }
 
+.exercise {
+  padding: 10px 5px;
+}
+
 .code {
   background-color: #282a36;
   padding: 10px;
