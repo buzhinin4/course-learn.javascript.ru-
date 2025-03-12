@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles.css" />
+
+    <title>05-07</title>
+  </head>
+  <body>
+    <section class="exercise">
+      <h3>1. Фильтрация уникальных элементов массива</h3>
+      <p>Допустим, у нас есть массив arr.</p>
+      <p>
+        Создайте функцию unique(arr), которая вернёт массив уникальных, не
+        повторяющихся значений массива arr.
+      </p>
+      <p>Например:</p>
+      <pre class="code">
+        function unique(arr) {
+          /* ваш код */
+        }
+        
+        let values = ["Hare", "Krishna", "Hare", "Krishna",
+          "Krishna", "Krishna", "Hare", "Hare", ":-O"
+        ];
+        
+        alert( unique(values) ); // Hare,Krishna,:-O</pre
+      >
+      <p>
+        P.S. Здесь мы используем строки, но значения могут быть любого типа.
+      </p>
+      <p>P.P.S. Используйте Set для хранения уникальных значений.</p>
+    </section>
+    <section class="exercise">
+      <h3>2. Отфильтруйте анаграммы</h3>
+      <p>
+        Анаграммы – это слова, у которых те же буквы в том же количестве, но они
+        располагаются в другом порядке.
+      </p>
+      <p>Например:</p>
+      <pre class="code">
+        nap - pan
+        ear - are - era
+        cheaters - hectares - teachers</pre
+      >
+      <p>
+        Напишите функцию aclean(arr), которая возвращает массив слов, очищенный
+        от анаграмм.
+      </p>
+      <p>Например:</p>
+      <pre class="code">
+        let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+
+        alert( aclean(arr) ); // "nap,teachers,ear" или "PAN,cheaters,era"</pre
+      >
+      <p>
+        Из каждой группы анаграмм должно остаться только одно слово, не важно
+        какое.
+      </p>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
