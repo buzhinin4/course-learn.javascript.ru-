@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles.css" />
+
+    <title>06-10</title>
+  </head>
+  <body>
+    <section class="exercise">
+      <h3>4. Исправьте функцию, теряющую "this"</h3>
+      <p>
+        Вызов askPassword() в приведённом ниже коде должен проверить пароль и
+        затем вызвать user.loginOk/loginFail в зависимости от ответа.
+      </p>
+      <p>Однако, его вызов приводит к ошибке. Почему?</p>
+      <p>
+        Исправьте выделенную строку, чтобы всё работало (других строк изменять
+        не надо).
+      </p>
+      <pre class="code">
+        function askPassword(ok, fail) {
+          let password = prompt("Password?", '');
+          if (password == "rockstar") ok();
+          else fail();
+        }
+        
+        let user = {
+          name: 'Вася',
+        
+          loginOk() {
+            alert(`${this.name} logged in`);
+          },
+        
+          loginFail() {
+            alert(`${this.name} failed to log in`);
+          },
+        
+        };
+        
+        askPassword(user.loginOk, user.loginFail);
+      </pre>
+    </section>
+    <section class="exercise">
+      <h3>5. Исправьте функцию, теряющую "this"</h3>
+      <p>
+        Это задание является немного усложнённым вариантом одного из предыдущих
+        – Исправьте функцию, теряющую "this".
+      </p>
+      <p>
+        Объект user был изменён. Теперь вместо двух функций loginOk/loginFail у
+        него есть только одна – user.login(true/false).
+      </p>
+      <p>
+        Что нужно передать в вызов функции askPassword в коде ниже, чтобы она
+        могла вызывать функцию user.login(true) как ok и функцию
+        user.login(false) как fail?
+      </p>
+      <pre class="code">
+        function askPassword(ok, fail) {
+          let password = prompt("Password?", '');
+          if (password == "rockstar") ok();
+          else fail();
+        }
+        
+        let user = {
+          name: 'Вася',
+        
+          loginOk() {
+            alert(`${this.name} logged in`);
+          },
+        
+          loginFail() {
+            alert(`${this.name} failed to log in`);
+          },
+        
+        };
+        
+        askPassword(user.loginOk, user.loginFail);
+      </pre>
+      <p>Ваши изменения должны затрагивать только выделенный фрагмент кода.</p>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
