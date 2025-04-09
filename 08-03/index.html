@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles.css" />
+
+    <title>08-03</title>
+  </head>
+  <body>
+    <section class="exercise">
+      <h3>1. Добавить функциям метод "f.defer(ms)"</h3>
+      <p>
+        Добавьте всем функциям в прототип метод defer(ms), который вызывает
+        функции через ms миллисекунд.
+      </p>
+      <p>После этого должен работать такой код:</p>
+      <pre class="code">
+        function f() {
+          alert("Hello!");
+        }
+        
+        f.defer(1000); // выведет "Hello!" через 1 секунду
+      </pre>
+    </section>
+  <body>
+    <section class="exercise">
+      <h3>2. Добавьте функциям декорирующий метод "defer()"</h3>
+      <p>
+        Добавьте всем функциям в прототип метод defer(ms), который возвращает обёртку, откладывающую вызов функции на ms миллисекунд.
+      </p>
+      <p>Например, должно работать так:</p>
+      <pre class="code">
+        function f(a, b) {
+          alert( a + b );
+        }
+        
+        f.defer(1000)(1, 2); // выведет 3 через 1 секунду.
+      </pre>
+      <p>
+        Пожалуйста, заметьте, что аргументы должны корректно передаваться оригинальной функции.
+      </p>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
