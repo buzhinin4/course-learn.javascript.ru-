@@ -26,7 +26,3 @@ for (let key in dictionary) {
 
 // ваш метод toString в действии
 alert(dictionary); // "apple,__proto__"
-
-//2 exercise
-
-console.log("exercise 2");
